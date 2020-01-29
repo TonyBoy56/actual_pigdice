@@ -34,6 +34,9 @@ $(document).ready(function() {
     console.log("score",score);
     var game = new Game(score);
     console.log("game-score",game.goalScore);
+    $(".game").show();
+    $("#formy").hide();
+    $("#scoreGoal").text("This is your goal!! Reach it! " + score);
   })
 
   $('#roll').click(function(event) {
