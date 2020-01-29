@@ -10,9 +10,9 @@ By Keturah Howard, Antonio Cruz January 29th 2020
 
 *specs here*
 
-* Button returns 3
-  * Input: click
-  * Output: 3
+* Seperate buttons returns a message
+  * Input: click pass
+  * Output: 'pass work'
 * Button returns a random number
   * Input: click
   * Output: (random number 1 - 6)
