@@ -1,14 +1,16 @@
-# Title
-By Keturah Howard, **input date** 2020
+# Title Pig Dice!
+By Keturah Howard, Antonio Cruz **input date** 2020
 
 ## Description
   
-*Address book that displays a list of names in your contact, that displays emails, names, and phone numbers for each contact clicked on.*
+*Welcome to Pig Dice!. An interactive game where you can compete against another player to get as close to a score as possible __without passing it__. Select the score you want to play to, click the button to roll your dice, and try to win*
 
 ## Behavioral Driven Development
   *Heres a list of the specific behaviors I wanted to be acheived throughout the development process, starting from most basic to complex.*
 
 *specs here*
+
+* 
 
 ## Set Up 
   To set up you can simply interact with the webpage by clicking [here](https://keturahdev.github.io//) to access the gh-pages for this repository. Or! To view the code and in Visual Studio and all that jazz, follow the steps bellow. 
