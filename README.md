@@ -1,5 +1,5 @@
-# Title Pig Dice!
-By Keturah Howard, Antonio Cruz **input date** 2020
+# Pig Dice!
+By Keturah Howard, Antonio Cruz January 29th 2020
 
 ## Description
   
@@ -10,7 +10,29 @@ By Keturah Howard, Antonio Cruz **input date** 2020
 
 *specs here*
 
-* 
+* Button returns 3
+  * Input: click
+  * Output: 3
+* Button returns a random number
+  * Input: click
+  * Output: (random number 1 - 6)
+* Allow player to set goal score
+  * Input: click
+  * Output: (random number 1 - 6)
+* Assigns the random number to a players score
+  * Input: click
+  * Output: player's score: (random number 1 - 6)
+* Assigns the random number to a 2 seperate players score's
+  * Input: player 1 clicks, player 2 clicks
+  * Output: player1s score: (random number 1 - 6), player2s score: (random nuber 1-6)
+* Display winner when goal score is met
+  * Input: score = (goal score)
+  * Output: "you win!"
+* When player passes, the'yre score stays and the next player can roll to assign score 
+  * Input: click pass button
+  * Output: players score = (current score), go ahead and roll player 2
+  
+
 
 ## Set Up 
   To set up you can simply interact with the webpage by clicking [here](https://keturahdev.github.io//) to access the gh-pages for this repository. Or! To view the code and in Visual Studio and all that jazz, follow the steps bellow. 
@@ -35,4 +57,4 @@ There are currently no known bugs, however, if there are any issues running this
 
 ## Legal
 
-Copyright (c) 2020 Keturah D Howard.
+Copyright (c) 2020 Keturah D Howard, Antonio R. Cruz.
