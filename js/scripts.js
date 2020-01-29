@@ -1,7 +1,8 @@
 // back-end //
 
-
-
+function Game(goalScore) {
+  this.goalScore = goalScore
+}
 
 function diceRoll(dice) {
   function getRandomInt(max) {
@@ -14,15 +15,27 @@ function diceRoll(dice) {
   var rolledNumber = dice[rolling]
   console.log('rolled number', rolledNumber);
   return rolledNumber;
-
+  
 }
 
 
-// front-end //
-
 var dice = [1, 2, 3, 4, 5, 6];
+// var game = new Game()
+
+// front-end //
+// Always put objets in interface
+
 
 $(document).ready(function() {
+
+  $('form#formy').submit(function(event) {
+    event.preventDefault();
+    var score = parseInt($("#score-goal").val());
+    console.log("score",score);
+    var game = new Game(score);
+    console.log("game-score",game.goalScore);
+  })
+
   $('#roll').click(function(event) {
     event.preventDefault();
     var roll = $("#roll");

@@ -22,6 +22,9 @@ By Keturah Howard, Antonio Cruz January 29th 2020
 * Allow player to set goal score
   * Input: click
   * Output: (random number 1 - 6)
+* Display goal score and hide input field and show 'game div'
+  * Input: 12
+  * Output: hides input, shows number, shows everything else that was previously made
 * Assigns the random number to a players score
   * Input: click
   * Output: player's score: (random number 1 - 6)
