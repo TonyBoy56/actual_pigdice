@@ -29,12 +29,15 @@ By Keturah Howard, Antonio Cruz January 29th 2020
   * Input: Jose
   * Output: player1: Jose
 * Display player names
+  * Input: Jose, Mose
+  * Output: Jose, Mose
+* Display players name who's *turn* it is
   * Input: Jose
   * Output: "Rolling for" + name.
 * Assigns the random number to a players score
   * Input: click
   * Output: player's score: (random number 1 - 6)
-* Assigns the random number to a 2 seperate players score's
+* Assigns the random number to 2 seperate players score's
   * Input: player 1 clicks, player 2 clicks
   * Output: player1s score: (random number 1 - 6), player2s score: (random nuber 1-6)
 * Display winner when goal score is met
