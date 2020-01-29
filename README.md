@@ -12,7 +12,10 @@ By Keturah Howard, Antonio Cruz January 29th 2020
 
 * Seperate buttons returns a message
   * Input: click pass
-  * Output: 'pass work'
+  * Output: 'pass work' in console
+* Seperate buttons returns a message
+  * Input: click pass
+  * Output: 'pass work' in output div
 * Button returns a random number
   * Input: click
   * Output: (random number 1 - 6)
