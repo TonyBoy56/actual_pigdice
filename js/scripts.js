@@ -1,7 +1,10 @@
 // back-end //
-
 function Game(goalScore) {
-  this.goalScore = goalScore
+  this.goalScore = goalScore;
+}
+function Player(name, score) {
+  this.name = name; 
+  this.score = score;
 }
 
 function diceRoll(dice) {
@@ -15,9 +18,7 @@ function diceRoll(dice) {
   var rolledNumber = dice[rolling]
   console.log('rolled number', rolledNumber);
   return rolledNumber;
-  
 }
-
 
 var dice = [1, 2, 3, 4, 5, 6];
 // var game = new Game()
@@ -25,32 +26,46 @@ var dice = [1, 2, 3, 4, 5, 6];
 // front-end //
 // Always put objets in interface
 
+function displayPlayerTurn(player) {
+
+}
 
 $(document).ready(function() {
 
   $('form#formy').submit(function(event) {
     event.preventDefault();
     var score = parseInt($("#score-goal").val());
-    console.log("score",score);
+    // console.log("score",score);
     var game = new Game(score);
-    console.log("game-score",game.goalScore);
+    // console.log("game-score",game.goalScore);
+
+    var name1 = $("#name1").val();
+    var name2 = $("#name2").val();
+
+    var player1 = new Player(name1, 0); 
+    var player2 = new Player(name2, 0); 
+    console.log('player1 name:',player1.name);
+    console.log('player2 name:',player2.name);
+
     $(".game").show();
     $("#formy").hide();
-    $("#scoreGoal").text("This is your goal!! Reach it! " + score);
+
+    $("#scoreGoal").text("This is your goal!! Reach it! " + game.goalScore);
+    // $("#scoreGoal").text("This is your goal!! Reach it! " + game.goalScore);
   })
 
   $('#roll').click(function(event) {
     event.preventDefault();
     var roll = $("#roll");
-    console.log("roll worked!");
+    // console.log("roll worked!");
     var rolledNumber = diceRoll(dice); 
-    console.log('what is rolled number', rolledNumber)
+    // console.log('what is rolled number', rolledNumber)
     $('#output').text('You rolled: ' + rolledNumber);
   })
   $('#pass').click(function(event) {
     event.preventDefault();
     var roll = $("#roll");
-    console.log("pass worked!");
+    // console.log("pass worked!");
     $('#output').text('pass worked!') 
   })
 })

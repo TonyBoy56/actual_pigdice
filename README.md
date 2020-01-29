@@ -25,6 +25,12 @@ By Keturah Howard, Antonio Cruz January 29th 2020
 * Display goal score and hide input field and show 'game div'
   * Input: 12
   * Output: hides input, shows number, shows everything else that was previously made
+* Create player names
+  * Input: Jose
+  * Output: player1: Jose
+* Display player names
+  * Input: Jose
+  * Output: "Rolling for" + name.
 * Assigns the random number to a players score
   * Input: click
   * Output: player's score: (random number 1 - 6)
