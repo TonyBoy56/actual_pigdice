@@ -16,6 +16,7 @@ function Player(name, score) {
 
 function diceRoll() {
   var dice = [1, 2, 3, 4, 5, 6];
+
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
@@ -57,11 +58,17 @@ function diceRoll() {
 
 function switchTurns() {
   game.switchPlayer()
-  console.log('game',game)
+  // console.log('game',game)
+  // var output = $('#output');
   if (game.currentPlayer === 1) {
-    $('#output').append("<p class='head'>Rolling for: " + player1.name1 +  "</p>")
+    console.log('current player 1 here')
+    // $('#output').text("hello")
+    $('#output').append("<p class='head'>Rolling for: " + player1.name +  "</p>")
+    // output.append('help');
+    
   } else if (game.currentPlayer === 2) {
-    $('#output').append("<p class='head'>Rolling for: " + player2.name2 +  "</p>")
+    console.log('current player 2 here')
+    $('#output').append("<p class='head'>Rolling for: " + player2.name +  "</p>")
   }
   //changing the name displayed in the output
   //current player holds value of 1
@@ -102,7 +109,7 @@ $(document).ready(function() {
     event.preventDefault();
     var roll = $("#roll");
 
-    var rolledNumber = diceRoll(dice); 
+    var rolledNumber = diceRoll(); 
 
     $('#diced').remove();
     $('#output').append("<p id='diced'>You rolled: " + rolledNumber +  "</p>")
@@ -111,6 +118,6 @@ $(document).ready(function() {
     event.preventDefault();
     switchTurns(currentPlayer);
 
-    $('#output').text('pass worked!') 
+    // $('#output').text('pass worked!') 
   })
 })
